@@ -23,9 +23,12 @@ import { socials, info } from "../assets/data";
       ))
     }
   </ul>
-  <ul 
+  <ul
     class="grid justify-items-center gap-x-3 xl:basis-[20%] md:basis-[28%] sm:basis-[40%] xs:basis-[75%]"
-    style={{ gridTemplateColumns: `repeat(${info.length + 1}, minmax(0, 1fr))` }}>
+    style={{
+      gridTemplateColumns: `repeat(${info.length + 1}, minmax(0, 1fr))`,
+    }}
+  >
     <li>
       <a
         class="opacity-70 hover:opacity-100 duration-300 text-[17px] font-semibold"
@@ -36,9 +39,13 @@ import { socials, info } from "../assets/data";
       pathname == "/" &&
         info.map((i) => (
           <li>
-            <a 
-                class="opacity-70 hover:opacity-100 duration-300 text-[17px] font-semibold"
-                href={`#${i.text.toLocaleLowerCase()}`}> {i.text}</a>
+            <a
+              class="opacity-70 hover:opacity-100 duration-300 text-[17px] font-semibold"
+              href={`#${i.text.toLocaleLowerCase()}`}
+            >
+              {" "}
+              {i.text}
+            </a>
           </li>
         ))
     }

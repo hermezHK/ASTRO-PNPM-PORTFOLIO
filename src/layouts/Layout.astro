@@ -12,31 +12,18 @@ import { ViewTransitions } from "astro:transitions";
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta 
-		name="description" 
-		content="Astro description" 
-	/>
-    <meta 
-		name="viewport" 
-		content="width=device-width" 
-	/>
-    <link 
-		rel="icon" 
-		type="image/svg+xml" 
-		href="/favicon.svg" 
-	/>
-    <meta 
-		name="generator" 
-		content={Astro.generator} 
-	/>
-	<!-- Box Icons -->
-	<link 
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-	/>
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
     <title>{title}</title>
-	<ViewTransitions />
+    <ViewTransitions />
   </head>
   <body class="bg-black text-white">
     <slot />
