@@ -1,0 +1,19 @@
+---
+import type { GetStaticPaths } from "astro";
+const { id } = Astro.params;
+import Layout from "../layouts/Layout.astro";
+import { projects } from "../assets/data";
+
+export function getStaticPaths ()  {
+    return [
+        { params: { id: "prueba"} },
+        { params: { id: "prueba"} },
+        { params: { id: "prueba"} },
+        { params: { id: "prueba"} },
+    ];
+}
+
+const card = projects.find((card) => card.image == id);
+console.log(card);
+---
+<Layout title={`Project | ${id}`}><div>params {id}</div></Layout>
