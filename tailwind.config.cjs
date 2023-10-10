@@ -6,6 +6,9 @@ module.exports = {
 			screens: {
 				xs: "280px",
 				xxs: "400px",
+			},
+			colors : {
+				context: "var(--context-color)"
 			}
 		},
 	},
